@@ -1,16 +1,26 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #e0f2e9;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-h1 {
-    color: #2e7d32;
+.header {
+    background-color: #2e7d32;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5%;
+    color: white;
 }
 
-p {
-    font-size: 18px;
-    color: #333;
+.content {
+    flex-grow: 1;
+    background-color: white;
+    padding-right: 5%;
+    text-align: right;
 }
 
 button {
