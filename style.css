@@ -7,8 +7,8 @@ body {
 }
 
 .header {
-    background-color: #2e7d32;
-    height: 30vh;
+    background-color: #2C3E50;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -20,6 +20,46 @@ body {
     font-size: 40px;
     color: #a6ef9c;
     margin: 0;
+}
+
+
+.navbar {
+    background-color: #1A252F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 0;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #34495E;
+    border-radius: 0;
+    transition: background 0.3s;
+    border-left: 2px solid #2C3E50;
+}
+
+
+.navbar a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: none;
+}
+
+
+.navbar a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.navbar a:hover {
+    background-color: #1A252F;
 }
 
 .content {
