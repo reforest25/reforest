@@ -16,7 +16,7 @@ body {
     color: white;
 }
 
-h1 {
+.header h1 {
     font-size: 40px;
     color: #a6ef9c;
 }
