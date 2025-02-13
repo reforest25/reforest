@@ -19,6 +19,7 @@ body {
 .header h1 {
     font-size: 40px;
     color: #a6ef9c;
+    margin: 0;
 }
 
 .content {
