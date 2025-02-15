@@ -12,9 +12,10 @@ body {
 
 .header {
     background-color: #2C3E50;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     margin: 0 auto;
@@ -29,6 +30,7 @@ body {
     background-repeat: no-repeat; /* Prevents repeating */
 }
 
+
 .header h1 {
     font-family: "Quicksand", sans-serif;
     font-weight: normal;
@@ -37,6 +39,71 @@ body {
     margin: 0;
 }
 
+.header p{
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+
+
+.bannertext {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.banner {
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+    margin-top: 120px;
+    display: block;
+}
+
+.text {
+    position: absolute;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin-top: 30px
+}
+
+
+.intro {
+  color: #4a4a4a;
+  background-color: white;
+  width: 60%;
+  min-height: 80px;
+  border-color: #4a4a4a;
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  margin-top: 100px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro h1 {
+  text-align: center;
+}
+
+.intro p {
+  font-size: 20px;
+}
 
 
 
@@ -84,15 +151,15 @@ body {
 }
 
 .navbar a:nth-of-type(1) {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-left: none;
 }
 
 
 .navbar a:last-child {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     padding: 10px 10px;
 }
 
@@ -104,13 +171,16 @@ body {
 
 .content {
     flex-grow: 1;
-    background-color: white;
-    padding-right: 5%;
+    background-color: #f5f5f5;
     text-align: right;
-    height: 70vh;
+    height: 500vh;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     margin-top: 30px;
+    background-image: url("https://github.com/reforest25/reforest/blob/main/90dbf402730c059e0f106ce80d1d779a.jpg?raw=true");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
@@ -130,6 +200,24 @@ button:hover {
 }
 
 
-.content p1{
-  
+.content {
+  background-color: #f5f5f5;
+}
+
+.about-section {
+    text-align: center;
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.about-section h2 {
+    color: #2C3E50;
+}
+.about-section p {
+    font-size: 18px;
+    color: #4a4a4a;
 }
