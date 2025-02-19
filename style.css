@@ -865,6 +865,7 @@ html, body {
     border-radius: 10px;
     width: 300px;
     text-align: center;
+    transition: transform 0.2s ease-in-out;
 }
 
 .solution-card h3{
@@ -875,6 +876,10 @@ html, body {
 .solution-card p{
   color:#4a4a4a;
   font-size: 20px;
+}
+
+.solution-card:hover{
+  transform: scale(1.05);
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
