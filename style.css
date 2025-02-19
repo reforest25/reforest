@@ -4,7 +4,12 @@ body {
     background: #f9f9f9;
 }
 
-
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+}
 
 
 
@@ -74,6 +79,16 @@ body {
     margin-top: 30px
 }
 
+.header img{
+  height: 50px;
+  width: auto;
+}
+
+.codeavour {
+  position: absolute;
+  top: 10%;
+  right: 1%;
+}
 
 .intro {
   color: #4a4a4a;
@@ -289,7 +304,7 @@ button:hover {
     padding-bottom: 0;
   }
   
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1200px) {
     .video-download-container {
         flex-direction: column;
         align-items: center;
@@ -315,29 +330,7 @@ button:hover {
     border-radius: 10px;
 }
 
-.download-section {
-    flex: 1;
-    text-align: center;
-}
 
-
-.download-btn {
-    display: inline-block;
-    background-color: #f5a742;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: normal;
-    border-radius: 8px;
-    transition: background 0.3s;
-    font-family: "Quicksand", sans-serif;
-    margin-top: 20px;
-}
-
-.download-btn:hover {
-    background-color: #f7c179;
-}
 
 
 .video-download-container h2 {
@@ -542,23 +535,58 @@ button:hover {
 }
 
 
-@media (max-width: 768px) {
-
+@media (min-width: 769px) and (max-width: 1200px) {
     .development-container {
         grid-template-columns: 1fr;
         max-width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .development-card {
-        width: 90%;
+        width: 80%;
         max-width: 400px;
+    }
+
+    .develop-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .development-card h1 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .development-card p{
+      font-size: 16px;
     }
 }
 
-@media (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
     .section-3 {
         position: relative;
         display: flex;
@@ -579,7 +607,7 @@ button:hover {
     }
 
     .mobile-header h1 {
-        font-size: 30px;
+        font-size: 20px;
         color: #2C3E50;
         margin: 0 auto;
     }
@@ -641,7 +669,7 @@ button:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1200px) {
     #info-container {
         flex-direction: column;
         align-items: center;
@@ -670,7 +698,7 @@ button:hover {
   
   .banner-section {
     background: #f9f9f9;
-    height: 30%;
+    height: 20%;
   }
   
 
@@ -714,13 +742,15 @@ button:hover {
 .footer {
     background-color: #2C3E50;
     color: white;
-    padding: 30px 0;
+    padding: 20px 0;
     text-align: center;
-    height: 10%;
+    height: auto;
+    position: relative;
 }
 
 .footer img {
-    height: 150px;
+    height: 80px;
+    width: auto;
     margin: 10px;
 }
 
@@ -729,8 +759,33 @@ button:hover {
     font-size: 16px;
 }
 
-  
-@media (max-width: 480px) {
+@media (min-width: 769px) and (max-width: 1200px) {
+    .footer img {
+        height: 50px;
+        width: auto;
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+
+    .banner-section {
+        max-height: 15%;
+    }
+
+    .footer-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
     .navbar a {
         padding: 0.5rem;
     }
@@ -760,7 +815,7 @@ button:hover {
 
 
 
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1200px) {
     .navbar {
         width: 95%;
         height: 50px;
@@ -789,7 +844,50 @@ html, body {
     width: 100%;
 }
 
-@media (max-width: 768px) {
+
+.solutions-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.solutions-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.solution-card {
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.solution-card h3{
+  color: #2C3E50;
+  font-size: 28px;
+}
+
+.solution-card p{
+  color:#4a4a4a;
+  font-size: 20px;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .solutions-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -805,9 +903,13 @@ html, body {
         text-align: center;
         width: 90%;
     }
+  
+  .about-section{
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   #info-container {
     flex-direction: column;
     align-items: center;
@@ -845,13 +947,13 @@ html, body {
   }
 
   .text-block h1 {
-    font-size: 1.6rem;
+    font-size: 22px;
     text-align: center;
     margin: 0 auto;
   }
 
   .text-block p {
-    font-size: 1.2rem;
+    font-size: 16px;
     line-height: 1.6;
   }
 
@@ -868,3 +970,38 @@ html, body {
 
 
 
+@media (min-width: 769px) and (max-width: 1200px) {
+  .team-member {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .team-member h3 {
+    font-size: 16px;
+  }
+
+  .team-member p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .codeavour {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    transform: translateY(0);
+  }
+}
