@@ -44,7 +44,7 @@ html, body {
 
 .header p{
   font-family: "Quicksand", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   margin: 0;
 }
 
@@ -798,7 +798,7 @@ button:hover {
 
 
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1200px) {
     .navbar a {
         padding: 0.5rem;
     }
@@ -828,7 +828,7 @@ button:hover {
 
 
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (max-width: 600px){
     .navbar {
         width: 95%;
         height: 50px;
@@ -843,7 +843,7 @@ button:hover {
 
     .navbar a,
     .dropbtn {
-        font-size: 14px;
+        font-size: 12px;
         padding: 8px 12px;
     }
 
